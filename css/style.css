@@ -588,7 +588,6 @@ footer {
   font-weight: bold;
   font-size: 10px;
   color: #331717;
-  white-space: nowrap;
   overflow: visible;
   text-overflow: ellipsis;
   max-width: 150px;
