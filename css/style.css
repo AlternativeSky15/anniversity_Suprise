@@ -628,3 +628,54 @@ footer {
   font-family: monospace;
   margin-top: 2px;
 }
+
+/* ============================================== Mobile Responsive Media Query
+*/
+@media screen and (max-width: 768px) {
+  /* ကတ်တစ်ခုလုံးကို ဖုန်းစခရင်အကျယ်နဲ့ အညီဖြစ်စေရန် */
+  #card {
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    position: relative !important;
+    margin: 20px auto !important;
+    height: auto !important;
+  }
+
+  #card,
+  #card-front,
+  #card-inside {
+    height: 500px !important; /* ဖုန်းစခရင်အတွက် အမြင့်ကို သင့်တော်သလို ချိန်ညှိပါ */
+  }
+
+  /* မျက်နှာဖုံးနှင့် အတွင်းစာမျက်နှာတို့ကို Mobile တွင် လိုက်လျောညီထွေဖြစ်စေရန် */
+  #card-front,
+  #card-inside {
+    width: 100% !important;
+    left: 0 !important;
+    position: absolute !important;
+  }
+
+  /* ဖွင့်လိုက်သောအခါ မျက်နှာဖုံးနောက်သို့ ရောက်သွားစေရန် */
+  #card.open-fully #card-front {
+    transform: rotateY(-180deg) !important;
+  }
+
+  /* Music Player ကို Mobile စခရင်နှင့်အညီ အနေအထားမှန်ကန်စေရန် */
+  .custom-music-player {
+    width: 92% !important;
+    bottom: 10px !important;
+    padding: 8px 10px !important;
+  }
+
+  .song-title {
+    max-width: 120px !important;
+    font-size: 13px !important;
+  }
+
+  /* Polaroid ပုံများကို ဖုန်းစခရင်တွင် သပ်ရပ်စွာ ပေါ်စေရန် */
+  .polaroid {
+    width: 180px !important;
+    height: 160px !important;
+  }
+}
